@@ -1,0 +1,51 @@
+[default]
+DEBUG = true
+FLASK_ADMIN_SWATCH = "cerulean" 
+ADMIN_NAME = "SISCOMSOC"
+ADMIN_TEMPLATE_MODE = "bootstrap3"
+EXTENSIONS = [
+    "app.ext.db:init_app",
+    "app.ext.auth:init_app",
+    "app.ext.admin:init_app",
+    "app.ext.migrate:init_app",
+    "app.ext.toolbar:init_app",
+    "app.ext.appearence:init_app",
+    "app.ext.cli:init_app",
+    "app.ext.site:init_app",
+    "app.ext.hooks:init_app"
+]
+
+
+[development]
+SQLALCHEMY_DATABASE_URI = 'sqlite:///storage.db'
+FLASK_ENV = "development"
+FLASK_APP = "SISCOMSOC"
+DEBUG = true
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+ADMIN_TEMPLATE_MODE = "bootstrap3"
+EXTENSIONS = [
+    "app.ext.db:init_app",
+    "app.ext.auth:init_app",
+    "app.ext.admin:init_app",
+    "app.ext.migrate:init_app",
+    "app.ext.toolbar:init_app",
+    "app.ext.appearence:init_app",
+    "app.ext.cli:init_app",
+    "app.ext.site:init_app",
+    "app.ext.hooks:init_app"
+]
+
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
+DEBUG_TB_PROFILER_ENABLED = true
+DEBUG_TB_INTERCEPT_REDIRECTS = false 
+
+
+[production]
+SQLALCHEMY_DATABASE_URI = 'mysql:///...'
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+
+
+    
+    
+
+        

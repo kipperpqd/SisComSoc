@@ -1,0 +1,139 @@
+{% extends "bootstrap/base.html" %}
+
+{% block html_attribs %} lang="pt-BR"{% endblock %}
+
+{% block title %}SisComSoc{% endblock %}
+
+{% block styles %} 
+{{super()}}
+    <link href="{{url_for('static', filename='css/my_style.css')}}" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+
+{% block navbar %}
+
+{% endblock %}
+
+{% block content %}
+<div class="container frame">
+    <div classe="div_head">
+        <img class="img" src="{{url_for('static', filename='img/brasao.png')}}" alt="">
+      <p> MINISTÉRIO DA DEFESA</br>
+          EXÉRCITO BRASILEIRO</br>
+          CMNE - 10ª RM</br>
+          PARQUE REGIONAL DE MANUTENÇÃO / 10</br>
+          Pq R MB / (1947)</br>
+      </p>
+      <h3 id="c">FICHA DE INFORMAÇÕES DE RELAÇÕES PÚBLICAS</h3>
+      
+    </div>
+        
+    
+    <div class="div_info">
+      <p id="titulo">DADOS DA OM</p>
+      <p id="left"> 
+          Nome: Parque Regional de Manutenção/10 Sigla: Pq R Mnt/10</br>
+          Data de Criação: 6 de abril de 1947</br>
+          Endereço: Av Eduardo Girão, 1533, Fátima, Fortaleza-CE</br>
+          E-mail: pq10rp@gmail.com  - Rede Social: instagram: @pqrmnt10_exercitooficial</br>
+          Acesse nosso Site: www.pqrmnt10.eb.mil.br</br>
+          Intranet: intranet.pqrmnt10.eb.mil.br</br>
+      </p>
+    
+    </div>
+    
+    <div class="div_info">
+      <p id="titulo">DADOS DO MILITAR (Diretor)</p>
+        <table id="left">
+          <tr>
+            <td>Posto: Ten Cel</td>
+            <td>Quadro: MB Armt</td>
+            <td> Turma: 1997</td>
+          </tr>
+          <tr>
+            <td>Nome Completo: JEAN RICARDO DE HOLANDA TORRES</td>
+           
+          </tr>
+          <tr>
+           <td>Nome de Guerra: JEAN TORRES</td>
+           <td>Nascimento: 04 Set 1977</td>
+          </td>
+  
+          <tr><td>Endereço: </td></tr>
+          <tr>
+            <td>Fone funcional: </td>
+            <td>Fone fixo:</td>
+          </tr>
+          <tr>
+            <td>Email funcional: </td>
+            <td>Email pessoal:</td>
+          </tr>
+          <tr>
+            <td>Nome Conjuge: </td>
+            <td>Aniversário do Conjuge:</td>
+            <td>Fone do Conjuge:</td>
+          </tr>
+        </table>
+     
+    </div>
+  
+    <div class="div_info">
+      
+        <table id="left">
+          <p id="titulo">DADOS DO SUBDIRETOR</p>
+          <tr>
+            <td>Posto: </td>
+            <td>Arma:</td>
+            <td id="c"> Turma:</td>
+          </tr>
+          <tr>
+            <td>Nome Completo: </td>
+            <td>Nome de Guerra: </td>
+            </tr>
+  
+          <tr>
+            
+            <td>Nascimento:</td>
+          </tr>
+          <tr><td>Endereço: </td></tr>
+          <tr>
+            <td>Fone funcional: </td>
+            <td>Fone fixo:</td>
+          </tr>
+          <tr>
+            <td>Email funcional: </td>
+            <td>Email pessoal:</td>
+          </tr>
+          <tr>
+            <td>Nome Conjuge: </td>
+            <td>Aniversário do Conjuge:</td>
+            <td>Fone do Conjuge:</td>
+          </tr>
+        </table>
+     
+    </div>
+    <div class="div_info">
+      <p id="titulo">DADOS DO OFICIAL DE COM SOC</p>
+        <table id="left">
+          <tr>
+            <td>Posto: </td>
+            <td>Arma:</td>
+          </tr>
+          <tr><td>Nome Completo: </td></tr>
+  
+          <tr>
+            <td>Nome de Guerra: </td>
+            <td>Nascimento:</td>
+          </tr>
+          <tr><td>Endereço: </td></tr>
+          <tr>
+            <td>Fone funcional: </td>
+            <td>Email Sec Com Soc:</td>
+          </tr>
+          
+        </table>
+     
+    </div>
+    
+  </div>
+{% endblock %}
