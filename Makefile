@@ -16,8 +16,8 @@ install:
 
 
 init_db:
-	FLASK_APP=SisComSoc/app.py flask create_db
-	FLASK_APP=SisComSoc/app.py flask db upgrade
+	FLASK_APP=SisComSoc/app/app.py flask create_db
+	FLASK_APP=SisComSoc/app/app.py flask db upgrade
 
 test:
 	FLASK_ENV=test pytest tests/ -v --cov=siscomsoc
