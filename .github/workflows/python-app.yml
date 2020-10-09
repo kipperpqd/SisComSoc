@@ -30,7 +30,7 @@ jobs:
       run: |
         make install
     
-    - name: Run tests
+    - name: init_db
       run: |
-        make test
+        make init_db
    
